@@ -46,7 +46,7 @@ pipeline {
   
     stage('Push Image to DockerHub') {
       steps {
-        sh 'docker push swethamba859/Banking-project:1.0'
+        sh 'docker push swethamba859/banking-project:1.0'
             }
     } 
       /*  stage ('Configure Test-server with Terraform, Ansible and then Deploying'){
