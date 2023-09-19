@@ -63,11 +63,11 @@ pipeline {
            steps {
              ansiblePlaybook credentialsId: 'BabucKeypair', disableHostKeyChecking: true, installation: 'ansible', inventory: 'inventory', playbook: 'finance-playbook.yml'
            }
-               }*/
+               }
      }
  post{
         success{
             slackSend( channel: "#27-apr-devops", token: "slack-authn", color: "good", message: "Test Email")
         }
-    }
+    }*/
 }
