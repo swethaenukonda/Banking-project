@@ -31,7 +31,7 @@ pipeline {
             }
     }
     
-/*    stage('Docker Image Creation') {
+   stage('Docker Image Creation') {
       steps {
         sh 'docker build -t swethamba859/Banking-project:1.0 .'
             }
@@ -49,7 +49,7 @@ pipeline {
         sh 'docker push swethamba859/Banking-project:1.0'
             }
     } 
-        stage ('Configure Test-server with Terraform, Ansible and then Deploying'){
+      /*  stage ('Configure Test-server with Terraform, Ansible and then Deploying'){
             steps {
                 dir('my-serverfiles'){
                 sh 'sudo chmod 600 jenkinskey.pem'
